@@ -13,7 +13,7 @@ import type {
 
 export const API_BASE =
   (import.meta.env.VITE_API_URL as string | undefined)?.replace(/\/$/, '') ||
-  'http://localhost:3001/api'
+  'http://localhost:3001/api' || 'https://ecommerce-backend-xcdq.onrender.com'
 
 interface ApiResponse<T> {
   success: boolean
